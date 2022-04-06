@@ -1,20 +1,12 @@
 h1 {
-    color: blue;
+    color: white;
 }
 
-nav {
-    border-bottom: 2px solid black;
+header {
+    border-bottom: 3px solid red;
+    background-color: black;
 }
 
-ol {
-    padding-left: 0;
-}
-
-.crumb {
-    margin-right: 2em;
-    display: inline;
-}
-
-body {
-    color: black;
+h2 {
+    color: red;
 }
