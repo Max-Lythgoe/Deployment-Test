@@ -8,8 +8,8 @@ var rollbar = new Rollbar({
 function darkMode() {
 	var element = document.body;
 	element.className = "dark-mode";
-    // rollbar.log('darkmode activated')
-    darkAlert()
+    rollbar.log('darkmode activated')
+    // darkAlert()
 }
 
 function lightMode() {
