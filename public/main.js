@@ -1,14 +1,17 @@
-const Rollbar = require("rollbar");
-
+var Rollbar = require('rollbar')
+var rollbar = new Rollbar({
+  accessToken: '3fee38264cba4599be10bebcb15ca58a',
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+})
 
 function darkMode() {
 	var element = document.body;
 	element.className = "dark-mode";
-    Rollbar.log('switched to darkmode')
+    rollbar.log('darkmode activated')
 }
 
 function lightMode() {
 	var element = document.body;
 	element.className = "light-mode";
-    Rollbar.log('switched to lightmode')
 }

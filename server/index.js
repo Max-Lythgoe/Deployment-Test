@@ -24,25 +24,28 @@ const PORT = process.env.PORT || 4005
 
 app.listen(PORT, () => { console.log(`listening on ${PORT}`)})
 
-
-try {
-    rollFunction();
-  } catch (error) {
-    console.error(error);
-    rollbar.error(`triggered because the rollFunction does not exist`)
+function darkAlert () {
+  rollbar.log('darkmode time')
 }
 
-try {
-  rollFunctionTwo();
-} catch (error) {
-    console.error(error);
-    rollbar.critical(`this will self destruct in 5..4..3..2..`)
-}
 
-try {
-  rollFunctionTwo();
-} catch (error) {
-    console.error(error);
-    rollbar.warning(`this is your final warning`)
-}
+// try {
+//     rollFunction();
+//   } catch (error) {
+//     console.error(error);
+//     rollbar.error(`triggered because the rollFunction does not exist`)
+// }
 
+// try {
+//   rollFunctionTwo();
+// } catch (error) {
+//     console.error(error);
+//     rollbar.critical(`this will self destruct in 5..4..3..2..`)
+// }
+
+// try {
+//   rollFunctionTwo();
+// } catch (error) {
+//     console.error(error);
+//     rollbar.warning(`this is your final warning`)
+// }

@@ -7,6 +7,7 @@ header {
     border-bottom: 3px solid red;
     background-color: black;
     border-top: 3px solid red;
+    padding-bottom: 0;
 }
 
 h2 {
@@ -14,8 +15,14 @@ h2 {
     text-align: center;
 }
 
-img {
+#main-pic {
     width: 100%;
+}
+
+#about-pic {
+    width: 50vh;
+    display: flex;
+    flex-direction: row;
 }
 
 body {
@@ -23,18 +30,47 @@ body {
     margin: 0px;
 }
 
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+#Main-Title a:visited {
+    color: white;
+}
+
+#Main-Title a {
+    color: white;
+}
+
+
 nav { 
     border-bottom: 3px solid red;
+    /* background-color: white; */
 }
+
+
 
 ul {
     padding-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .crumb {
-    margin-right: 5em;
-    display: inline;
+    margin-right: 6em;
+    margin-top: 0;
 }
 
 .dark-mode {
@@ -43,6 +79,6 @@ ul {
 }
 
 .light-mode {
-	background-color: #ddd;
+	background-color: white;
 	color: black;
 }
