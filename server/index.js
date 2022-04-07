@@ -30,4 +30,18 @@ try {
   } catch (error) {
     console.error(error);
     rollbar.error(`triggered because the rollFunction does not exist`)
-  }
+}
+
+try {
+  rollFunctionTwo();
+} catch (error) {
+    console.error(error);
+    rollbar.critical(`this will self destruct in 5..4..3..2..`)
+}
+
+try {
+  rollFunctionTwo();
+} catch (error) {
+    console.error(error);
+    rollbar.warning(`this is your final warning`)
+}
