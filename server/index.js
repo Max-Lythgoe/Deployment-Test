@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const rollbar = require('rollbar')
 
 const app = express()
 
@@ -23,3 +24,11 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 4005
 
 app.listen(PORT, () => { console.log(`listening on ${PORT}`)})
+
+
+try {
+    rollFunction();
+  } catch (error) {
+    console.error(error);
+    Rollbar.error(`${err} triggered because the rollFunction does not exist`)
+  }
