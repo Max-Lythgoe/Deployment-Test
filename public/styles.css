@@ -36,3 +36,13 @@ ul {
     margin-right: 5em;
     display: inline;
 }
+
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+.light-mode {
+	background-color: #ddd;
+	color: black;
+}
