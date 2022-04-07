@@ -29,5 +29,5 @@ try {
     rollFunction();
   } catch (error) {
     console.error(error);
-    rollbar.error(`${err} triggered because the rollFunction does not exist`)
+    rollbar.error(`triggered because the rollFunction does not exist`)
   }
